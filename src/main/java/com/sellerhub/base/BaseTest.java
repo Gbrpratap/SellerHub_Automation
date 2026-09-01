@@ -13,7 +13,6 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        // Initialize Chrome Driver (Selenium 4 manages driver binaries automatically)
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

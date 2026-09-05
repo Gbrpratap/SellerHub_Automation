@@ -1,6 +1,7 @@
 package com.sellerhub.utils;
 
 import org.openqa.selenium.OutputType;
+
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
@@ -32,7 +33,6 @@ public class ScreenshotUtil {
         } catch (IOException e) {
             System.err.println("Failed to capture screenshot: " + e.getMessage());
         }
-
         return destinationPath;
     }
 }
